@@ -1,0 +1,58 @@
+Data Binding
+-----------------------------
+- to bind data from template to component class and vice versa.
+
+- defines how data flows
+
+- There are two types of Data Binding:
+    1. one-way data binding
+        a. component to view
+            i. interpolation
+            ii. property binding
+        b. view to component
+            event binding
+
+    2. two-way data binding
+        from component to view AND
+        from view to component
+
+
+interpolation
+-------------------------------
+- to bind data from component to view
+- syntax
+    {{ variable_name }}
+
+
+
+property binding
+----------------------
+- to bind properties of elems from component to view
+- syntax
+    [property] = "expression"
+
+
+
+
+event binding
+-------------------------
+- to bind events of elems from view to comonent
+- can be used for all available events
+- syntax
+    (event_name)="function()"
+
+
+
+
+two-way data binding
+--------------------------------
+- data flows from view to component and vice versa
+- data flow is both ways
+- combination of property binding and event binding
+- ngModel is a built-in directive which handles both property and event binding on same element.
+- syntax
+    [(ngModel)] = "data"
+
+
+
+

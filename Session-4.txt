@@ -1,0 +1,103 @@
+Directives
+----------------------------
+- used to extend power of html by giving it new syntax
+- it can change or modify behaviour of DOM elems
+
+- there are 4 types of directives:
+    1. component directives (eg AppComponent)
+    2. strutural directives
+        ngIf
+        ngFor
+        ngSwitch
+    3. attribute directive
+        ngStyle
+        ngClass
+    4. custome directives
+
+ng g component <comp_name>
+ng g directive <directive_name>
+
+
+
+
+ngIf
+------------------
+- to add or remove elems dynamically
+
+<div *ngIf="true">
+    This is div
+</div>
+
+ngIf
+ngIf with else
+ngIf with then and else
+
+
+
+
+ngFor
+-------------------
+- modifies dom structure
+- loops the elems to display data in template
+
+<div *ngFor="let ele of arr">
+    {{ ele }}
+</div>
+
+
+- provides local variables in array data
+index - returns current index
+first - returns true for first elem
+last - returns true for last elem
+even - returns true for even positioned elems
+odd - returns true for odd positioned elems
+
+
+
+
+ngSwitch
+---------------------------
+- there are mainly 3 elems of ngSwitch
+    ngSwitch
+    ngSwitchCase
+    ngSwitchDefault
+
+<div [ngSwitch]="day">
+    <div *ngSwitchCase="'mon'">
+        Today is Monday.
+    </div>
+    <div *ngSwitchCase="'tue'">
+        Today is Tuesday.
+    </div>
+    <div *ngSwitchDefault>
+        Invalid Day!!
+    </div>
+</div>
+
+
+
+
+
+ngStyle
+-----------------------------
+- to set DOM elems style properties
+- dynamic values can be passed via variables
+- any css property using ngStyle
+- more than one css properties on an dom elem
+
+<div [ngStyle]="{'background-color': 'aqua', 'color': 'red'}">
+    This is div for ngStyle
+</div>
+
+
+
+
+ngClass
+---------------------
+- to set a class name for elem
+- we can pass dynamic values via variable
+- we can give more than one classes
+
+<div [ngClass]="'c1 c2 c3'">
+    This is div for ngClass
+</div>

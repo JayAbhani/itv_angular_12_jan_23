@@ -1,0 +1,163 @@
+Environment Setup
+----------------------------
+
+Installing Bootstrap
+- there are two ways to include/install bootstrap in angular apps:
+    1) CDN
+    2) NPM Package
+
+1) cdn
+take cdn urls for styles and script and link them in index.html file of angular application
+
+2) using npm
+step-1 : install bootstrap package
+    npm install bootstrap --save
+
+step-2 : include css and js files in angular.json
+
+step-3 : also make sure you have jquery(optional for bootstrap 5) and popper.js installed
+
+step-4 : also include jquery and popper.js in angular.json
+
+step-5 : restart your application
+
+
+--save or -S flag:
+    - gets included in 'dependencies' section of package.json
+    - to keep track and manage these dependencies wuth future installs, upgrades and uninstalls
+    - also to use them in production
+
+--save-dev or -D flag
+    - in 'devDependencies'
+    - only using them in development environment
+
+
+
+
+Folder Structure in Angular
+-----------------------------------
+
+
+
+
+Boot Process of Angular Apps
+----------------------------------------
+ng serve
+    compiling the application
+    (index.html)
+    main.ts
+        bootstrapModule
+            AppModule
+                AppComponent
+                    <app-root>
+
+
+whenever we do ng serve/build/test, cli compiles our ts into js code
+    -> transpiling
+            main.js
+            styles.js
+            runtime.js
+            etc..
+
+
+
+
+
+Angular Apps Architecture
+----------------------------------------
+angular is a modular-based architecture
+src
+    students                //module
+        add-student         //component
+        edit-student        //component
+        delete-student      //component
+        view-student        //component
+
+    employees               //module
+        add-employee        //component
+            |
+
+
+
+
+
+
+Angular Modules
+----------------------------------------
+all the related functionalities is grouped in a module
+
+there are lots of built-in modules
+    eg. BrowserModule
+        BrowsersAnimationsModule
+
+module is a grouping of
+    components
+    services
+    pipes
+    directives
+    etc..
+
+every angular application should have at least one module by default, angular provides us with AppModule
+
+we can turn on or off the modules based on conditions
+
+creating a custom module
+    ng generate module students
+
+
+
+
+
+Angular Components
+-------------------------
+most important and basic building block of an agular application
+
+smallest functionality that will be implemented in your application
+
+we can have components inside components
+    -> parent-child relationship
+
+eg
+    students                //module
+        add-student         //component
+        edit-student        //component
+        delete-student      //component
+        view-student        //component
+            download-pdf    //component
+
+    authentication
+        new-user
+        login
+        forgot-password
+
+every components has 4 files
+    1) component.html   ->  view or html or template
+    2) component.css    ->  stylesheet
+    3) component.ts     ->  a class file which will have logic
+    4) component.spec.ts    ->  unit test script for component
+
+component decorator inside component.ts
+    selector - unique identifier for component
+    templateUrl - html file
+    styleUrls - css files
+
+creating angular component
+    ng g component <comp_name>
+    
+
+
+
+
+Templates in Angular Components
+-----------------------------------------
+<comp_name>.component.html
+
+two ways of using templates in a component
+    1) templateUrl
+        link html file (only one)
+    2) template
+        pass html code using ` ` (backticks)
+
+stylesUrl
+    array
+    can have multiple stylesheets

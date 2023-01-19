@@ -1,0 +1,105 @@
+Angular Vs React
+--------------------------
+Angular
+Angular is a complete framework that provodes a wide range of features for building web apps (eg dependency injection, two-way binding etc).
+
+More built-in features
+
+
+React
+Does not provide as many built-in features as Angular
+
+Focuses solely on view layer of an app
+
+
+When deciding which one to use,
+depends on your project requirement and team preference
+large, complex application which requires more built-in features -> Angular
+small project, prioritize flexibility and performance -> React
+
+
+
+
+
+What is Angular
+----------------------------
+- a frontend framework that makes it easy to build apps for web/mobile.
+- an open source project, primarily maintained by Google
+- Built entirely in TypeScript (superset of JavaScript)
+- angular used ts as its primary language, we'll be writing code in ts
+
+
+
+
+Features of Angular
+--------------------------------
+1) exceptional scaling and performance
+2) cross platform - mobile, web and desktop
+3) Single Page Application (SPA)
+4) TS Language
+5) Declarative Templates
+6) Dependency Injection
+7) End to end tooling
+
+
+
+
+Angular Version History
+-------------------------------------------
+                    AngularJS (Angular 1) (in js)
+                            |
+                    Angular 2 (complete rewrite of angularjs) (in ts from here)
+                            |
+                    Angular 4 (v3 was skipped due to some internal reason on conflict bw router package and angular)
+                            |
+                    Angular 5
+                            |
+                            |
+                    Angular 14 (-new version releases periodically
+                                -backward compatible from v4)
+
+
+
+
+
+Environment Setup
+-----------------------------------
+1) download and install nodejs
+2) npm (automatically installed with node)
+3) Download and install VSCode
+
+4) in terninal, 
+    npm i -g @angular/cli       //install angular cli globally
+    ng new <project_name>       //create a new project my-first-app
+    ng serve                    //run the app
+
+node -v
+to check node version
+
+npm -v
+to check npm version
+
+CLI: Command Line Interface
+Angular CLI provides some commands and schematics which helps us with faster code generation.
+        eg.
+        commands
+                ng new
+                ng generate module <module_name>
+                ng generate component <component_name>
+
+        schematics
+                ng serve
+                ng build
+                ng test
+
+In npm, -g or --global flag is used to indicate that a package should be installed globally rather than locally. That means package will be installed to a global directory and can be used by other projects on same machine.
+
+default port of angular is 4200
+
+url - http://localhost:4200  -> to view app in browser
+
+
+
+
+
+

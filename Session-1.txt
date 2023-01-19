@@ -1,0 +1,7 @@
+1. Difference between Library and Framework
+-------------------------------------------------------
+A library is a collection of pre-written code that can be used to perform specific tasks in a program.
+numpy(python), react(js)
+
+A framework is a set of libraries as well as a specific design and arctitecture for the program.
+ruby on rails(ruby), angular(js)

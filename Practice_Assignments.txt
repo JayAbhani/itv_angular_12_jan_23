@@ -1,0 +1,53 @@
+Session-6
+-----------------------
+
+assignment-1
+------------
+names = ["jay", "rohan", "neha", "kajal", "romit"];
+list
+    jay
+    rohan
+    neha
+    kajal
+    romit
+
+
+
+assignment-2
+-------------
+
+students = [
+    {
+        firstName: "jay",
+        lastName: "abhani",
+        age: 10
+    },
+    {
+        firstName: "yash",
+        lastName: "shah",
+        age: 18
+    },
+    {
+        firstName: "neha",
+        lastName: "sharma",
+        age: 36
+    },
+    {
+        firstName: "kajal",
+        lastName: "joshi",
+        age: 24
+    },
+    {
+        firstName: "rohan",
+        lastName: "shah",
+        age: 45
+    }
+]
+
+
+
+table
+
+first_name      last_name       age
+jay             abhani          10
+yash            shah            18

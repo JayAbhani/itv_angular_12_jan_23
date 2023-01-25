@@ -1,0 +1,56 @@
+Angular Pipes
+-----------------------
+
+- to transform data
+- takes data and convert it into desired format
+- | operator
+
+types of pipes
+    1. built-in pipes
+    2. parameterized pipes
+    3. chaining pipes
+    4. custom pipes
+
+
+built-in pipes
+---------------------------
+- transforms input data into desired format
+- we can use them in template
+- syntax
+    {{ <input_data> | <pipe_name> }}
+
+lowercase
+uppercase
+currancy
+date
+
+
+
+parameterized pipes
+----------------------------
+- we can pass parameters to pipes
+- : symbol
+- syntax
+    {{ <input_data> | <pipe_name>: '<parameter>' }}
+    {{ <input_data> | <pipe_name>: '<parameter1>:<parameter2>' }}
+
+eg
+    currency
+        USD
+        INR
+        CAD
+
+    date
+        short
+        medium
+        long
+        MM-dd-YYYY
+
+
+
+
+chaining pipes
+------------------------------
+- we use multiple pipes on a data input
+- syntax
+    {{ <input_data> | <pipe1_name> | <pipe2_name>: '<parameter>' | <pipe3_name> }}

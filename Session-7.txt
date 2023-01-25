@@ -1,0 +1,36 @@
+Angular Router
+--------------------------
+- routing -> mechanism to manage paths (routes)
+
+- navigation between different views
+
+routes:
+    home -> http://www.itvedant.com     //default route
+
+    pofile -> http://www.itvedant.com/profile   //component route
+
+    search -> http://www.itvedant.com/search?user=abc   //query params
+
+    users -> http://www.itvedant.com /users     //module
+        view-user -> http://www.itvedant.com/users/view     //child route
+        edit-user -> http://www.itvedant.com/users/edit     //child route
+        add-user -> http://www.itvedant.com/users/add   //child route
+
+    pageNotFound -> http://www.itvedant.com/pageNotFound    //404 error
+
+
+
+
+routes for components
+------------------------------
+- each component can have its own route
+- eg
+    /products
+    /products/view
+    /products/add
+
+
+
+
+router outlet
+------------------------

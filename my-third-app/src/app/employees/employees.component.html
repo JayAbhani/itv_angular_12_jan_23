@@ -1,0 +1,15 @@
+<p>employees works!</p>
+
+<table>
+    <tr>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>age</th>
+    </tr>
+    <tr *ngFor="let ele of employeesDetails">
+        <td>{{ ele.firstName }}</td>
+        <td>{{ ele.lastName }}</td>
+        <td>{{ ele.age }}</td>
+        <td><a [routerLink]="'empDetails/edit'">edit</a> | <a [routerLink]="'empDetails/delete'">delete</a></td>
+    </tr>
+</table>

@@ -1,0 +1,33 @@
+Angular Routing
+-------------------------
+
+component routes
+--------------------------
+
+
+
+routing strategy
+--------------------------
+path location
+hash location
+
+LocationStrategy
+    PathLocationStrategy
+    HashLocationStrategy
+
+
+http://www.myexample.com/#/abc
+
+
+
+
+base href
+----------------------
+
+
+
+
+routing module
+-----------------------
+
+ng generate module app-routing --flat --module=app

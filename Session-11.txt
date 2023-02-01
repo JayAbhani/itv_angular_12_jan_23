@@ -1,0 +1,47 @@
+lazy loading
+--------------------------
+
+college management system
+    admin
+    library
+    sports
+    payments
+    authentication
+    authorization
+
+lazy loaded module
+ng g module payments --route <module_route> --module app.module
+
+
+
+
+component communication
+------------------------------
+payments
+    make-payment
+    fee-receipt
+
+students
+    add-student
+    remove-student
+    edit-student
+    update-student
+
+
+
+parent component
+child component
+
+same module
+parent -> @Input -> child
+child -> @Output -> parent
+
+c1 -> parent
+c2 -> child
+
+
+
+different modules
+services
+
+

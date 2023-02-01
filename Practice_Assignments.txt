@@ -51,3 +51,98 @@ table
 first_name      last_name       age
 jay             abhani          10
 yash            shah            18
+
+
+
+
+assignment-3
+----------------------
+1. create a new project my-second-app (type "y" when asked for routing)     //done
+
+2. create two components
+    products
+    services                //done
+
+3. create child components of products and services
+    products
+        add-product
+        remove-product
+    services
+        add-service
+        remove-service              //done
+
+4. create routes for all components
+    products
+    services
+    add-product
+    remove-product
+    add-service
+    remove-service          //done
+
+5. verify your output       //done
+
+
+
+
+assignment-4
+-----------------------------------
+employees.component.ts
+
+employeesDetails = [
+    {
+        firstName: "jay",
+        lastName: "abhani",
+        age: 10
+    },
+    {
+        firstName: "yash",
+        lastName: "shah",
+        age: 18
+    },
+    {
+        firstName: "neha",
+        lastName: "sharma",
+        age: 36
+    },
+    {
+        firstName: "kajal",
+        lastName: "joshi",
+        age: 24
+    },
+    {
+        firstName: "rohan",
+        lastName: "shah",
+        age: 45
+    }
+]
+
+
+use bootstrap table
+first_name  last_name   age
+jay         abhani      10      edit | delete
+yash        shah        18      edit | delete
+
+/empDetails/edit
+/empDetails/delete
+
+
+
+
+assignment-5
+-------------------------------
+products component
+
+product/:id
+
+id==1
+    p -> this is product 1
+id==2
+    p -> this is product 2
+id==3
+    p -> this is product 3
+id==4
+    p -> this is product 4
+id==5
+    p -> this is product 4
+default
+    p -> product id not found

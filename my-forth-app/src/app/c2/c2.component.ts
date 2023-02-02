@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-c2',
@@ -7,5 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class C2Component {
   @Input()
-  myName = "";
+  childData = "";
+
+  @Output()
+  sendData = new EventEmitter();
+
+  sendDataToParent(){
+    this.sendData.emit("this is data from child component");
+  }
 }

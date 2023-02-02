@@ -1,0 +1,66 @@
+component communication
+---------------------------
+
+parent -> @Input -> child
+child -> @Output -> parent
+
+
+
+
+
+services and dependency injection
+---------------------------------------------------
+
+service
+-------
+- holds data and logic to be shared across different components in your application
+
+- services can contain methods to perform specific tasks and can be injected into components as a dependency.
+
+
+dependency
+----------
+- dependencies are objects and services that a class requires for its functionalities.
+
+
+dependency injection
+--------------------
+- angular Dependency Injection(DI) is a design pattern that allows a class to receive dependencies from external sources insteadof creating them in class.
+
+- angular uses this pattern to provide a way to pass services to components, which are required for their functionalities.
+
+
+types of classes used in DI
+---------------------------
+- client class
+    a class that requires dependencies
+- service class
+    a class providing dependency
+- injector class
+    responsible for injecting the service class object into client class
+
+
+types of DI
+-----------
+- constructor injection
+    dependencies are provided through class constructor
+- setter injection
+    dependencies are injected into client using a setter method
+- interface injection
+    uses interface
+
+
+to generate service class
+-------------------------
+ng generate service <service_name>
+
+
+@Injectable decorator is used to declare the service as an injectable class
+
+if you use 'providedIn: 'root'', the service will be registered with the root injector and will be available for injection throughout the application.
+
+'providers'
+    'provide'
+    'useClass'
+
+

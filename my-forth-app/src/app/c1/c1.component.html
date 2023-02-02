@@ -1,2 +1,4 @@
 <p>c1 works!</p>
-<app-c2 [myName]="firstName"></app-c2>
+<app-c2 [childData]="parentData" (sendData)="receiveDataFromChild($event)"></app-c2>
+
+<p>{{ receivedData }}</p>

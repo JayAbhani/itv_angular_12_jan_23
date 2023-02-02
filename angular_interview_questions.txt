@@ -1,0 +1,45 @@
+Angular Interview Questions
+---------------------------
+
+1. what is angular?
+
+2. what are features of angular?
+
+3. what are advantages of angular?
+
+4. what is angular cli?
+
+5. what is typescript?
+
+6. what is angular router?
+
+7. what is the purpose of base href tag?
+
+8. what are router imports?
+
+9. what is router outlet?
+
+10. what are router links?
+
+11. what is activated route?
+
+12. Do we need a routing module always?
+
+13. what is the purpose of ngFor directive?
+
+14. what is the purpose of ngIf directive?
+
+15. what is interpolation?
+
+16. what are pipes in angular?
+
+17. what is a parameterized pipe?
+
+18. how to chain pipes?
+
+19. what are directives in angular?
+
+20. what are various kinds of directives?
+
+
+

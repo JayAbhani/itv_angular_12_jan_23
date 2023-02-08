@@ -1,0 +1,124 @@
+HTTP
+---------------------------------
+
+http requests are used to fetch external data from server
+
+The communication between the frontend application and the backend services in Angular is done through HttpClient
+
+
+HttpClient is a built-in service in the @angular/common/http package that handles all incoming requests and has multiple return types for each request
+
+HttpClient uses Reactive Extension for JavaScript (RxJS) Observable to manage asynchronous code, such as promises in JavaScript
+
+RxJS is used for reactive programming and composing asynchronous or callback-based code with ease
+
+To set up HttpClient, HttpClientModule needs to be imported in the app.module.ts file and added to the imports in the @NgModule decorator. It is recommended to use HttpClient via a service
+
+To fetch data from the server, a URL can be passed as a parameter to the http.get() request method
+
+Other request methods available include http.post for sending data to the server, http.delete for deleting data from the database in the server, and http.put for updating data in the server
+
+
+
+
+RxJS (Reactive Extension for JavaScript) Observable
+--------------------------------------------------------
+Data from a server often comes through observables in Angular because observables provide a convenient and efficient way to handle asynchronous data.
+
+Asynchronous data is data that is not available immediately, and must be retrieved at a later time. For example, when making an HTTP request to a server, it can take some time for the request to complete and for the response to be received. During this time, the rest of the application should not be blocked and should be able to continue running.
+
+Observables in RxJS are used to handle asynchronous data because they provide a way of receiving data over time in a structured and organized manner. When you make an HTTP request, you can subscribe to the response observable and receive each chunk of data as it becomes available, rather than having to wait for the entire response to arrive. This allows the application to continue running while the request is in progress, rather than being blocked until the response is received.
+
+
+
+example of observable
+---------------------
+An observable in RxJS is like a stream that can emit multiple values over time. When you subscribe to an observable, you can receive each value that it emits and perform some action based on that value.
+
+// component class
+
+
+import { of, from } from 'rxjs';
+
+// create an observable from an array of values
+const numbers = of(1, 2, 3, 4, 5);
+
+// subscribe to the observable and log each value
+
+numbers.subscribe((val) => {
+    console.log(val);
+});
+
+// output
+// 1
+// 2
+// 3
+// 4
+// 5
+
+in this example, we create an observable using the of operator. This operator creates an observable that emits a set of values, in this case the numbers 1 to 5. We then subscribe to the observable using the subscribe method, which allows us to receive each value as it is emitted and perform some action, in this case logging the value to the console.
+
+
+
+
+building and deploying angular application with cli
+---------------------------------------------------------
+
+Here's a quick guide to build and deploy an Angular application using the CLI:
+
+First, install the Angular CLI globally using npm: npm install -g @angular/cli
+
+Create a new Angular project using the CLI: ng new my-app (Replace "my-app" with your desired project name)
+
+Navigate to the project directory: cd my-app
+
+Start a local development server using the CLI: ng serve
+
+Open your browser and navigate to http://localhost:4200/ to see the app in action.
+
+To build a production version of the app, run the following command: ng build --configuration=production
+
+This will create a dist directory with the optimized and bundled version of your application.
+
+To deploy the app, you need to host the contents of the dist directory on a web server.
+
+If you're using a static hosting service like GitHub Pages, AWS S3, or Firebase Hosting, you can simply copy the contents of the dist directory to your hosting service.
+
+If you want to host the app on a custom web server, you'll need to follow the instructions for deploying an Angular app on your preferred server technology (e.g. Node.js, Nginx, Apache, etc.).
+
+
+development, deployment and production environment
+--------------------------------------------------------------------
+
+In the context of Angular, the development environment refers to the environment where developers write, test, and debug Angular applications. This typically involves using an Integrated Development Environment (IDE) or a text editor to write code, a local web server or browser to test the application, and various tools for debugging and testing.
+
+The deployment process for an Angular application involves building a production version of the app using the Angular CLI and hosting it on a web server or a static hosting service, such as Firebase, Amazon S3, or GitHub Pages. This makes the app accessible to users via a web browser.
+
+The production environment for an Angular application is the environment where the app is running and serving real users. This could be on a dedicated web server, a cloud-based platform, or a shared hosting service. In the production environment, the app should be optimized for performance, stability, and security, and should be monitored for any issues that may arise.
+
+It's important to note that the development, deployment, and production environments should be separate from each other, to ensure that the app is thoroughly tested and validated before it is deployed to production. This helps to minimize the risk of bugs, security issues, and other problems that could negatively impact the user experience.
+
+
+
+
+hosting on GitHub pages
+-------------------------------------
+
+Hosting an Angular application on GitHub Pages is a simple and straightforward process. Here are the steps to do so:
+
+Build the production version of your Angular app: First, you need to build a production version of your Angular app. You can do this using the Angular CLI with the following command: ng build --configuration=production. This will compile the application and generate a set of optimized files in the "dist" directory.
+
+Create a GitHub repository: If you don't already have a GitHub repository for your project, create one by going to the GitHub website, clicking the "+" button in the top right corner, and selecting "New repository".
+
+Push the "dist" folder to the GitHub repository: Using the command line, navigate to the "dist" folder generated in step 1 and run the following commands to push it to the GitHub repository:
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <repository-url>
+git push -u origin master
+
+Enable GitHub Pages: Go to the settings for your GitHub repository and scroll down to the "GitHub Pages" section. Choose the "master" branch as the source for your GitHub Pages site, and save your changes.
+
+View your Angular app on GitHub Pages: After a few minutes, your Angular app should be live and accessible at a URL like https://<username>.github.io/<repository-name>.
+
+That's it! Your Angular app is now hosted on GitHub Pages, and you can share the URL with anyone to allow them to access your app. If you make changes to your code, simply rebuild the production version of the app, push the updated "dist" folder to the GitHub repository, and your changes will be reflected on the GitHub Pages site.

@@ -1,0 +1,29 @@
+angular interview questions
+------------------------------------------
+17. what is a parameterized pipe?
+
+18. how to chain pipes?
+
+19. what are directives in angular?
+
+20. what are various kinds of directives?
+
+
+
+
+Angular Forms
+-----------------------
+- forms in angular allows us to collect user input and interact with our application.
+
+- angular provides two ways to build forms:
+    1. template-driven
+    2. reactive forms
+
+
+1. template-driven
+------------------
+- template-driven forms in angular are a wqay to create forms using html template.
+- we use amgular template directives like ngModel, required and ngForm to handle data binding, validation and form submission.
+- use ngNativeValidate(in form tag) to make validations work.
+- ngForm directive create a FormGroup object to track form state and validations. (signin.value)
+- don't forget to import FormsModule from @angular/forms in module.ts file.

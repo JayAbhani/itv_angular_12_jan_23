@@ -1,0 +1,47 @@
+<!-- template-driven form example-1 -->
+
+<!-- <form #signin="ngForm" (ngSubmit)="submitNow(signin.value)" ngNativeValidate>
+  <div>
+    <label for="idUsername">Username: </label>
+    <input type="text" id="idUsername" name="nameUsername" required [(ngModel)]="myUserName">
+  </div>
+  <br>
+  <div>
+    <label for="idEmail">Email: </label>
+    <input type="email" id="idEmail" name="nameEmail" ngModel>
+  </div>
+  <br>
+  <div>
+    <label for="idPassword">Password: </label>
+    <input type="password" id="idPassword" name="namePassword" ngModel minlength="8">
+  </div>
+  <br>
+  <button type="submit">Submit this Form</button>
+</form> -->
+
+
+
+<!-- template-driven form example-2 -->
+<!-- <form #signup="ngForm" (ngSubmit)="onSubmit(signup.value)" ngNativeValidate>
+  <input type="text" placeholder="Username" name="nameUsername" ngModel required>
+  <br><br>
+  <input type="email" placeholder="Email" name="nameEmail" ngModel required>
+  <br><br>
+  <input type="password" placeholder="Password" name="namePassword" ngModel required minlength="8">
+  <br><br>
+  <button type="submit">Submit Form</button>
+</form> -->
+
+
+
+
+<!-- reactive form example -->
+<form [formGroup]="signin" (ngSubmit)="onSubmit(signin.value)" ngNativeValidate>
+  <input type="text" placeholder="Username" formControlName="username">
+  <br><br>
+  <input type="password" placeholder="Password" formControlName="password">
+  <br><br>
+  <button type="submit">Submit Now</button>
+</form>
+
+<router-outlet></router-outlet>

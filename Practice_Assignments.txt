@@ -146,3 +146,12 @@ id==5
     p -> this is product 4
 default
     p -> product id not found
+
+
+
+
+assignment-6
+------------
+create an angular form for collecting personal information like name, email, phone no, dob etc and implement validations for each field(make all required).
+using both template-driven and reactive forms.
+

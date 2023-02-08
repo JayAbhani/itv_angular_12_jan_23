@@ -1,0 +1,19 @@
+Angular Forms
+---------------------------------
+
+2. reactive forms
+-----------------
+
+- reactive forms in angular are a way to create forms using a reactive style, in which form logic is maintained in the component class.
+
+- they provide more control and flexibility than templae-driven forms.
+
+- use FormGroup to represent form as a whole.
+
+- use FormControl to represent individual form controls.
+
+- FormGroup takes the form state and validations.
+
+- submit the form by accessing form dara and validating with FormGroup.
+
+- don't forget to import ReactiveFormsModule from @angular/forms

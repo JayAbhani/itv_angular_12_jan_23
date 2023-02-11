@@ -35,7 +35,7 @@ step-5 : restart your application
 
 
 Folder Structure in Angular
------------------------------------
+----------------------------------
 
 
 
@@ -44,7 +44,7 @@ Boot Process of Angular Apps
 ----------------------------------------
 ng serve
     compiling the application
-    (index.html)
+    (index.html)Fol
     main.ts
         bootstrapModule
             AppModule
